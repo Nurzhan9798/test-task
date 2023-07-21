@@ -22,8 +22,10 @@ export const PostPageHeader = () => {
     }, [dispatch])
 
     const onKeyDown = useCallback((e: KeyboardEvent<HTMLInputElement>) => {
+        console.log(e.key)
         if (e.key === 'Enter') {
             fetchData();
+            console.log('fetchData')
         }
     }, [fetchData]);
 

@@ -33,10 +33,11 @@ export const PostsPage = () => {
 
 
     useEffect(() => {
+        console.log('INIT')
         dispatch(postsActions.setPageNumber(pageNumberFromURL));
         dispatch(postsActions.setSearch(searchFromURL));
         dispatch(fetchPosts());
-    }, [dispatch, pageNumberFromURL, searchFromURL])
+    }, [])
 
     useEffect(() => {
         setSearchParams({search: search, page: String(pageNumber)});

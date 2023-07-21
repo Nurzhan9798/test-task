@@ -1,7 +1,7 @@
-import { createAsyncThunk } from '@reduxjs/toolkit';
+import {createAsyncThunk} from '@reduxjs/toolkit';
 import axios from "axios";
 import {StateSchema} from "app/providers/StoreProvider";
-import { Post } from "entities/Post";
+import {Post} from "entities/Post";
 import {
     getPostPageLimit,
     getPostPageNumber,
@@ -9,6 +9,7 @@ import {
     getPostPageSearch,
     getPostPageSort
 } from "../selectors/postSelectors";
+
 export const fetchPosts = createAsyncThunk<
     Post[],
     void,
@@ -17,6 +18,7 @@ export const fetchPosts = createAsyncThunk<
     'postsPage/fetchPosts',
     async (props, thunkAPI) => {
         const { rejectWithValue, getState } = thunkAPI;
+
         const limit = getPostPageLimit(getState());
         const page = getPostPageNumber(getState());
         const sort = getPostPageSort(getState());
