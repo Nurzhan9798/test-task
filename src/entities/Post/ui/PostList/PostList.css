@@ -1,0 +1,38 @@
+.table__th {
+    padding: 0 !important;
+}
+
+.table__header {
+    background-color: #474955;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+}
+
+.table__header-icon {
+    margin-left: 8px;
+}
+
+.sort-icons {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.sort-icon {
+    color: #5A5C66;
+}
+
+.sort-icon:hover {
+    color: #aeaeae;
+}
+
+
+.sort-icon__active {
+    color: white;
+}

@@ -1,0 +1,32 @@
+.pagination-item {
+    padding: 5px;
+    background: none;
+    color: #474955;
+    border: none;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.pagination-item__active,
+.pagination-item:hover {
+    color: #7EBC3C;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pagination__btn {
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: 0;
+    font-size: 24px;
+}
+
+.pagination__btn:hover {
+    color: #7EBC3C;
+}

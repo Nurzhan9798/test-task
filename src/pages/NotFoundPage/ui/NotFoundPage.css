@@ -1,0 +1,7 @@
+.not-found-page {
+    font-size: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
